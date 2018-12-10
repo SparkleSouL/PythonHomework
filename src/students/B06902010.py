@@ -116,7 +116,7 @@ def task_2(
     '''
     # TODO: change length and sentence to fit the requirement
     length = len(input_list)
-    sentence = "1" + input_dictionary["a"]
+    sentence = (input_list[0],input_dictionary["a"])
     # End of TODO
     input_list_length_and_sentence = (length, sentence)
     print(input_list_length_and_sentence)
@@ -357,7 +357,7 @@ def task_7(
     '''
     # TODO: create a student object with different words to say
     student = Student(student_id,time)
-    student.set_words_to_say('hello')
+    student.set_words_to_say('Python = Hard')
     # End of TODO
 
     print(student.hello())
@@ -393,7 +393,7 @@ def task_8(
     from utils import draw_text
     respond = requests.get(img_url)
     result_img = Image_open(ByesIO(respond.content))
-    draw_text(result_img, 'b06202007')
+    draw_text(result_img, 'b06202010')
     #result_img.show()
     # and add your student ID on it with draw_name() in the utils module
     # under src/.
